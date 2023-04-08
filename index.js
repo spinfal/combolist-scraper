@@ -13,7 +13,7 @@ async function scrapeLinks(offset) {
   console.log(chalk.yellow(`[STATUS] Scraping links from offset ${ offset }`));
 
   try {
-    const url = `https://sqli.cloud/api/discussions?filter[tag]=combolists&sort=&page[offset]=${ offset }`;
+    const url = `${baseUrl}/api/discussions?filter[tag]=combolists&sort=&page[offset]=${ offset }`;
     const response = await request.get(url);
     const jsonResponse = JSON.parse(response);
     const data = jsonResponse.data;
