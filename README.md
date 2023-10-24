@@ -2,7 +2,7 @@
 A simple tool that will scrape combolist .txt files from a website, and save the text files to your PC. Inspiration for this tool came from [this](https://github.com/iq-thegoat/combobot) tool. Made with help from ChatGPT-4 :)
 
 ## Usage
-0. Ensure that you have the latest [NodeJS](https://nodejs.org/en/download) version installed
+0. Ensure that you have the latest [NodeJS](https://nodejs.org/en/download) version installed and [PNPM](https://pnpm.io/)
 ```bash
 node -v
 ```
@@ -13,7 +13,7 @@ cd combolist-scraper
 ```
 2. Install the requirements
 ```bash
-npm install
+pnpm install
 ```
 3. Run the tool
 ```bash
